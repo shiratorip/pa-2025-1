@@ -1,6 +1,6 @@
 import unittest
 from unittest import mock
-from round0.test_round_task1 import solve
+from round0.round_0_problem_1 import solve
 
 class TestRoundTask1(unittest.TestCase):
     @mock.patch('builtins.input', create=True)
