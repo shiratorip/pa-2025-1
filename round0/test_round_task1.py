@@ -70,5 +70,3 @@ def aInter(x,y):
 def aNot(x):
     global An
     return list(set(An[1]) - set(An[x]))
-
-#final time around 1hour and 10 minutes
