@@ -20,7 +20,7 @@
 #SOLUTION:
 
 An=[]
-def main():
+def solve():
     global An
     n,m,q = map(int,input().split())
     #filling A1 array - it consists of all number from 1 to n
@@ -30,7 +30,6 @@ def main():
     for i in range(1,n+1):
         for j in A1:
             if j%i==0:
-                print(i,"  ",j)
                 An[i].append(j)
 
     #filling An+m array according to operations from input 
@@ -58,9 +57,7 @@ def main():
             answers.append("TAK")
         else:
             answers.append("NIE")
-    for i in answers:
-        #output
-        print(i)
+    return "\n".join(answers)
 
 
 #sum,intersection, not functions
@@ -74,5 +71,4 @@ def aNot(x):
     global An
     return list(set(An[1]) - set(An[x]))
 
-main()
 #final time around 1hour and 10 minutes
